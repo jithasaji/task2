@@ -11,20 +11,24 @@ function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link className='btn border rounded ms-5'>
-              <Link to={'/wishlist'} className='d-flex align-items-center' style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold' }}>
-                <i class='me-2'></i>
-                SELL
-                <Badge className='ms-2 rounded bg-light'></Badge>
-              </Link>
-            </Nav.Link>
-            <Nav.Link className='btn border rounded ms-5'>
-              <Link to={'/cart'} className='d-flex align-items-center' style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold' }}>
-                <i className=' me-2'></i>
-                BUY
-                <Badge className='ms-2 rounded bg-light'></Badge>
 
+              <Link to={'/Sell'}>
+                <li className='d-flex align-items-center' style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold' }}>
+                SELL
+                </li>
+                <Badge className='ms-2 rounded bg-light'></Badge>
               </Link>
             </Nav.Link>
+
+            <Nav.Link className='btn border rounded ms-5'>
+              <Link to={'/Buy'} >
+                <li className='d-flex align-items-center' style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold' }}>
+                BUY
+                </li>
+                <Badge className='ms-2 rounded bg-light'></Badge>
+              </Link>
+            </Nav.Link>
+            
           </Nav>
         </Navbar.Collapse>
       </Container>
